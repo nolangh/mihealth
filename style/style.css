@@ -9,16 +9,42 @@ body {
   background: coral;
 }
 /* ---------------------------------- styles --------------------------------- */
-
+/* --------------------------------- Header --------------------------------- */
 header {
   display: flex;
+  justify-content: flex-end;
+  background-color: plum;
   width: 100%;
-  height: 5em;
+  height: 6em;
+}
+
+li {
+  list-style-type: none;
 }
 
 .nav {
-  align-self: flex-end;
   width: 25%;
 }
 .nav_ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.body_container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.left_div {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.right_div {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  height: 100%;
 }
