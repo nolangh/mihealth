@@ -42,13 +42,17 @@ li {
 }
 
 .left_div {
-  flex-grow: 1;
   height: 100%;
+  flex-grow: 1;
 }
 
 .right_div {
   display: flex;
   flex-direction: row;
   flex-grow: 2;
-  height: 100%;
+}
+
+.img_container {
+  background: pink;
+  width: 5em;
 }
