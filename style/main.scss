@@ -3,6 +3,61 @@
   padding: 0;
 }
 
+/* -------------------------------- Variables ------------------------------- */
+
+/* --------------------------------- Colors --------------------------------- */
+$green: #2ba84a;
+$black: #000000;
+$white: #ffffff;
+$grey: #7f7979;
+$red: #3d0c11;
+/* ---------------------------------- Fonts --------------------------------- */
+/* -------------------------------- Font Size ------------------------------- */
+/* ------------------------------- Font Weight ------------------------------ */
+
 body {
+  display: flex;
+  flex-direction: column;
   background: coral;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: lightgreen;
+  height: 8em;
+}
+
+.body_container {
+  height: 100%;
+  background: lightblue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_div {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 30%;
+  background-color: $green;
+}
+
+.h1 {
+  h1 {
+    font-size: 6em;
+  }
+}
+
+.p {
+}
+
+.right_div {
+  height: 75%;
+  width: 70%;
+  background-color: $red;
 }

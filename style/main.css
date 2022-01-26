@@ -3,6 +3,68 @@
   padding: 0;
 }
 
+/* -------------------------------- Variables ------------------------------- */
+/* --------------------------------- Colors --------------------------------- */
+/* ---------------------------------- Fonts --------------------------------- */
+/* -------------------------------- Font Size ------------------------------- */
+/* ------------------------------- Font Weight ------------------------------ */
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: coral;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: lightgreen;
+  height: 8em;
+}
+
+.body_container {
+  height: 100%;
+  background: lightblue;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 75%;
+  width: 30%;
+  background-color: #2ba84a;
+}
+
+.h1 h1 {
+  font-size: 6em;
+}
+
+.right_div {
+  height: 75%;
+  width: 70%;
+  background-color: #3d0c11;
 }
