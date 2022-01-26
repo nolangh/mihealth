@@ -11,9 +11,19 @@ $black: #000000;
 $white: #ffffff;
 $grey: #7f7979;
 $red: #3d0c11;
+
 /* ---------------------------------- Fonts --------------------------------- */
+$main-font: "Antonio", sans-serif;
 /* -------------------------------- Font Size ------------------------------- */
 /* ------------------------------- Font Weight ------------------------------ */
+$xlight: 200;
+$light: 400;
+$med: 600;
+$larg: 700;
+/* ----------------------------------- End ---------------------------------- */
+html {
+  font-family: $main-font;
+}
 
 body {
   display: flex;
@@ -30,8 +40,8 @@ header {
 }
 
 .body_container {
-  height: 100%;
   background: lightblue;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -42,22 +52,25 @@ header {
 .left_div {
   display: flex;
   flex-direction: column;
-  height: 75%;
-  width: 30%;
+  width: 25%;
   background-color: $green;
 }
 
 .h1 {
-  h1 {
-    font-size: 6em;
-  }
+  font-size: 3rem;
 }
 
 .p {
+  font-size: 2em;
+}
+
+.bottom_left {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .right_div {
-  height: 75%;
-  width: 70%;
+  width: 65%;
   background-color: $red;
 }
