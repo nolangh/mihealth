@@ -8,6 +8,11 @@
 /* ---------------------------------- Fonts --------------------------------- */
 /* -------------------------------- Font Size ------------------------------- */
 /* ------------------------------- Font Weight ------------------------------ */
+/* ----------------------------------- End ---------------------------------- */
+html {
+  font-family: "Antonio", sans-serif;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,9 +33,9 @@ header {
 }
 
 .body_container {
-  height: 100%;
   background: lightblue;
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,17 +59,50 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 75%;
-  width: 30%;
+  width: 25%;
   background-color: #2ba84a;
 }
 
-.h1 h1 {
-  font-size: 6em;
+.h1 {
+  font-size: 3rem;
+}
+
+.p {
+  font-size: 2em;
+}
+
+.bottom_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bottom_left img {
+  margin-left: 1em;
 }
 
 .right_div {
-  height: 75%;
-  width: 70%;
-  background-color: #3d0c11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 65%;
+  background-color: pink;
+}
+
+.imgage {
+  height: 100%;
+  width: 25%;
+  background-image: url("/images/oatmeal.jpg");
+  background-size: cover;
 }
