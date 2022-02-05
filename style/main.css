@@ -59,6 +59,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 75%;
   width: 25%;
   background-color: #2ba84a;
 }
@@ -96,12 +97,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 75%;
   width: 65%;
   background-color: pink;
 }
-
-.imgage {
-  height: 100%;
+.right_div .image {
+  height: 90%;
   width: 25%;
   background-image: url("/images/oatmeal.jpg");
   background-size: cover;

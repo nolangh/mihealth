@@ -48,10 +48,10 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .left_div {
   display: flex;
   flex-direction: column;
+  height: 75%;
   width: 25%;
   background-color: $green;
 }
@@ -77,13 +77,15 @@ header {
 .right_div {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  height: 75%;
   width: 65%;
   background-color: pink;
-}
 
-.imgage {
-  height: 100%;
-  width: 25%;
-  background-image: url("/images/oatmeal.jpg");
-  background-size: cover;
+  .image {
+    height: 90%;
+    width: 25%;
+    background-image: url("/images/oatmeal.jpg");
+    background-size: cover;
+  }
 }
