@@ -65,14 +65,16 @@ header {
 }
 
 .h1 {
+  height: auto;
   font-size: 3rem;
 }
 
 .p {
   font-size: 2em;
+  font-family: "Antonio", sans-serif;
 }
 
-.bottom_left {
+.browse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +87,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.bottom_left img {
+.browse img {
   margin-left: 1em;
 }
 
@@ -97,16 +99,27 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 75%;
-  width: 65%;
+  width: 70%;
   background-color: pink;
 }
 .right_div .image {
-  height: 90%;
-  width: 25%;
+  width: 32%;
+}
+.right_div #img1 {
   background-image: url("/images/oatmeal.jpg");
   background-size: cover;
+  margin-left: 2%;
+}
+.right_div #img2 {
+  background-image: url("/images/pasta.jpg");
+  background-size: cover;
+}
+.right_div #img3 {
+  background-image: url("/images/shrimp.jpg");
+  background-size: cover;
+  /* ---------------------------- margin-left: 5%; ---------------------------- */
 }

@@ -48,6 +48,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .left_div {
   display: flex;
   flex-direction: column;
@@ -57,14 +58,16 @@ header {
 }
 
 .h1 {
+  height: auto;
   font-size: 3rem;
 }
 
 .p {
   font-size: 2em;
+  font-family: $main-font;
 }
 
-.bottom_left {
+.browse {
   display: flex;
   flex-direction: row;
   width: 75%;
@@ -77,15 +80,29 @@ header {
 .right_div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 75%;
-  width: 65%;
+  width: 70%;
   background-color: pink;
 
   .image {
-    height: 90%;
-    width: 25%;
+    width: 32%;
+  }
+
+  #img1 {
     background-image: url("/images/oatmeal.jpg");
     background-size: cover;
+    margin-left: 2%;
+  }
+
+  #img2 {
+    background-image: url("/images/pasta.jpg");
+    background-size: cover;
+  }
+
+  #img3 {
+    background-image: url("/images/shrimp.jpg");
+    background-size: cover;
+    /* ---------------------------- margin-left: 5%; ---------------------------- */
   }
 }
