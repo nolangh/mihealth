@@ -248,6 +248,8 @@ header .nav .nav_ul .nav_li__a {
 }
 .right_div #img2 {
   background-image: url("/images/pasta.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   margin-left: 2%;
 }
@@ -288,6 +290,8 @@ header .nav .nav_ul .nav_li__a {
 }
 .right_div #img3 {
   background-image: url("/images/shrimp.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   margin-left: 2%;
 }
