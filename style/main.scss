@@ -21,8 +21,50 @@ body {
 
 header {
   width: 100%;
-  background: lightgreen;
   height: 8em;
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: v.$white;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .logo_cont {
+      height: 100%;
+      width: 15%;
+      margin-left: 5.3rem;
+
+      h1 {
+        color: v.$green;
+        font-size: 5em;
+        font-weight: v.$large;
+        font-family: v.$main-font;
+
+        span {
+          color: red;
+        }
+      }
+    }
+
+    .nav_ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 7em;
+      width: 25%;
+
+      .nav_li__a {
+        text-decoration: none;
+        color: v.$black;
+        font-family: v.$main-font;
+        font-size: 2em;
+      }
+    }
+  }
 }
 
 .body_container {
@@ -59,26 +101,27 @@ header {
 
   p {
     padding-left: 6px;
+    font-family: v.$main-font;
     font-size: 2.8em;
     font-weight: v.$med;
   }
 }
 
 .browse_cont {
-  flex-grow: 0;
   width: 75%;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   padding-left: 6px;
+  padding-bottom: 2em;
 
   h4 {
-    flex-grow: 1;
     font-size: 3rem;
   }
 
   img {
-    flex-grow: 2;
+    width: 4em;
+    margin-left: 1em;
   }
 }
 
@@ -91,6 +134,10 @@ header {
   background-color: pink;
 
   .image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     width: 32%;
   }
 
@@ -98,16 +145,99 @@ header {
     background-image: url("/images/oatmeal.jpg");
     background-size: cover;
     margin-left: 2%;
+
+    .top_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 4em;
+      width: 25%;
+      background: coral;
+
+      p {
+        font-size: 2.5em;
+      }
+    }
+
+    .bottom_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 4em;
+      width: 50%;
+      background: lightblue;
+
+      p {
+        font-size: 2.5em;
+        margin-right: 1.1em;
+      }
+    }
   }
 
   #img2 {
-    background-image: url("/images/pasta.jpg");
+    background-image: url("/images/oatmeal.jpg");
     background-size: cover;
+    margin-left: 2%;
+
+    .top_box {
+      height: 4em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      background: coral;
+
+      p {
+        font-size: 2.5em;
+      }
+    }
+
+    .bottom_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 4em;
+      width: 50%;
+      background: lightblue;
+
+      p {
+        font-size: 2.5em;
+        margin-right: 1em;
+      }
+    }
   }
 
   #img3 {
-    background-image: url("/images/shrimp.jpg");
+    background-image: url("/images/oatmeal.jpg");
     background-size: cover;
-    /* ---------------------------- margin-left: 5%; ---------------------------- */
+    margin-left: 2%;
+
+    .top_box {
+      height: 4em;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: coral;
+
+      p {
+        font-size: 2.5em;
+      }
+    }
+
+    .bottom_box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 4em;
+      width: 50%;
+      background: lightblue;
+
+      p {
+        font-size: 2.5em;
+        font-size: 2.5em;
+        margin-right: 0.5em;
+      }
+    }
   }
 }

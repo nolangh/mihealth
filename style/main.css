@@ -28,8 +28,65 @@ body {
 
 header {
   width: 100%;
-  background: lightgreen;
   height: 8em;
+}
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header .nav .logo_cont {
+  height: 100%;
+  width: 15%;
+  margin-left: 5.3rem;
+}
+header .nav .logo_cont h1 {
+  color: #2ba84a;
+  font-size: 5em;
+  font-weight: 700;
+  font-family: "Antonio", sans-serif;
+}
+header .nav .logo_cont h1 span {
+  color: red;
+}
+header .nav .nav_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 7em;
+  width: 25%;
+}
+header .nav .nav_ul .nav_li__a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Antonio", sans-serif;
+  font-size: 2em;
 }
 
 .body_container {
@@ -88,14 +145,12 @@ header {
 }
 .p_cont p {
   padding-left: 6px;
+  font-family: "Antonio", sans-serif;
   font-size: 2.8em;
   font-weight: 600;
 }
 
 .browse_cont {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,21 +159,18 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 6px;
+  padding-bottom: 2em;
 }
 .browse_cont h4 {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   font-size: 3rem;
 }
 .browse_cont img {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 4em;
+  margin-left: 1em;
 }
 
 .right_div {
@@ -137,6 +189,19 @@ header {
   background-color: pink;
 }
 .right_div .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 32%;
 }
 .right_div #img1 {
@@ -144,12 +209,119 @@ header {
   background-size: cover;
   margin-left: 2%;
 }
+.right_div #img1 .top_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  width: 25%;
+  background: coral;
+}
+.right_div #img1 .top_box p {
+  font-size: 2.5em;
+}
+.right_div #img1 .bottom_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  width: 50%;
+  background: lightblue;
+}
+.right_div #img1 .bottom_box p {
+  font-size: 2.5em;
+  margin-right: 1.1em;
+}
 .right_div #img2 {
-  background-image: url("/images/pasta.jpg");
+  background-image: url("/images/oatmeal.jpg");
   background-size: cover;
+  margin-left: 2%;
+}
+.right_div #img2 .top_box {
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  background: coral;
+}
+.right_div #img2 .top_box p {
+  font-size: 2.5em;
+}
+.right_div #img2 .bottom_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  width: 50%;
+  background: lightblue;
+}
+.right_div #img2 .bottom_box p {
+  font-size: 2.5em;
+  margin-right: 1em;
 }
 .right_div #img3 {
-  background-image: url("/images/shrimp.jpg");
+  background-image: url("/images/oatmeal.jpg");
   background-size: cover;
-  /* ---------------------------- margin-left: 5%; ---------------------------- */
+  margin-left: 2%;
+}
+.right_div #img3 .top_box {
+  height: 4em;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: coral;
+}
+.right_div #img3 .top_box p {
+  font-size: 2.5em;
+}
+.right_div #img3 .bottom_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  width: 50%;
+  background: lightblue;
+}
+.right_div #img3 .bottom_box p {
+  font-size: 2.5em;
+  font-size: 2.5em;
+  margin-right: 0.5em;
 }
