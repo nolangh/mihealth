@@ -31,10 +31,11 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
+
     .logo_cont {
       height: 100%;
       width: 15%;
-      margin-left: 5.3rem;
+      margin-left: 3rem;
 
       h1 {
         color: v.$green;
@@ -68,7 +69,8 @@ header {
 }
 
 .body_container {
-  background: lightblue;
+  background-image: url("/images/noise_lines.png");
+  background-repeat: repeat;
   width: 100%;
   height: 100%;
   display: flex;
@@ -80,48 +82,49 @@ header {
 .left_div {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 79%;
   width: 25%;
-  background-color: v.$green;
-}
+  background-image: url("/images/noise_lines.png");
+  background-repeat: repeat;
 
-.h1_cont {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  .h1_cont {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
-  h1 {
-    font-size: 9rem;
+    h1 {
+      font-size: 5rem;
+    }
   }
-}
 
-.p_cont {
-  flex-grow: 2;
+  .p_cont {
+    flex-grow: 2;
 
-  p {
+    p {
+      padding-left: 6px;
+      font-family: v.$main-font;
+      font-size: 1.8em;
+      font-weight: v.$med;
+    }
+  }
+
+  .browse_cont {
+    flex-grow: 1;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding-left: 6px;
-    font-family: v.$main-font;
-    font-size: 2.8em;
-    font-weight: v.$med;
-  }
-}
+    padding-bottom: 2em;
 
-.browse_cont {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 6px;
-  padding-bottom: 2em;
+    h4 {
+      font-size: 3rem;
+    }
 
-  h4 {
-    font-size: 3rem;
-  }
-
-  img {
-    width: 4em;
-    margin-left: 1em;
+    img {
+      width: 4em;
+      margin-left: 1em;
+    }
   }
 }
 
@@ -131,7 +134,8 @@ header {
   justify-content: space-between;
   height: 75%;
   width: 70%;
-  background-color: pink;
+  background-image: url("/images/noise_lines.png");
+  background-repeat: repeat;
 
   .image {
     display: flex;
@@ -152,7 +156,7 @@ header {
       align-items: center;
       height: 4em;
       width: 25%;
-      background: coral;
+      background: v.$white;
 
       p {
         font-size: 2.5em;
@@ -165,7 +169,7 @@ header {
       align-items: center;
       height: 4em;
       width: 50%;
-      background: lightblue;
+      background: v.$green;
 
       p {
         font-size: 2.5em;
@@ -175,7 +179,7 @@ header {
   }
 
   #img2 {
-    background-image: url("/images/oatmeal.jpg");
+    background-image: url("/images/pasta.jpg");
     background-size: cover;
     margin-left: 2%;
 
@@ -185,7 +189,7 @@ header {
       justify-content: center;
       align-items: center;
       width: 25%;
-      background: coral;
+      background: v.$white;
 
       p {
         font-size: 2.5em;
@@ -198,7 +202,7 @@ header {
       align-items: center;
       height: 4em;
       width: 50%;
-      background: lightblue;
+      background: v.$green;
 
       p {
         font-size: 2.5em;
@@ -208,17 +212,17 @@ header {
   }
 
   #img3 {
-    background-image: url("/images/oatmeal.jpg");
+    background-image: url("/images/shrimp.jpg");
     background-size: cover;
     margin-left: 2%;
 
     .top_box {
       height: 4em;
-      width: 25%;
+      width: 10em;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: coral;
+      background: v.$white;
 
       p {
         font-size: 2.5em;
@@ -231,12 +235,11 @@ header {
       align-items: center;
       height: 4em;
       width: 50%;
-      background: lightblue;
+      background-color: v.$green;
 
       p {
         font-size: 2.5em;
-        font-size: 2.5em;
-        margin-right: 0.5em;
+        margin-right: 0.6rem;
       }
     }
   }
