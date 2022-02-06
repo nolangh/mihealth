@@ -1,14 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* -------------------------------- Variables ------------------------------- */
-/* --------------------------------- Colors --------------------------------- */
 /* ---------------------------------- Fonts --------------------------------- */
 /* -------------------------------- Font Size ------------------------------- */
 /* ------------------------------- Font Weight ------------------------------ */
-/* ----------------------------------- End ---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-family: "Antonio", sans-serif;
 }
@@ -59,22 +59,44 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 75%;
+  overflow: hidden;
+  height: 79%;
   width: 25%;
   background-color: #2ba84a;
 }
 
-.h1 {
-  height: auto;
-  font-size: 3rem;
+.h1_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.h1_cont h1 {
+  font-size: 9rem;
 }
 
-.p {
-  font-size: 2em;
-  font-family: "Antonio", sans-serif;
+.p_cont {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+.p_cont p {
+  padding-left: 6px;
+  font-size: 2.8em;
+  font-weight: 600;
 }
 
-.browse {
+.browse_cont {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,13 +104,21 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 75%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 6px;
 }
-.browse img {
-  margin-left: 1em;
+.browse_cont h4 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 3rem;
+}
+.browse_cont img {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .right_div {

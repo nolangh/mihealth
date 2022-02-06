@@ -1,28 +1,14 @@
+@use "vars" as v;
+
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-/* -------------------------------- Variables ------------------------------- */
-
-/* --------------------------------- Colors --------------------------------- */
-$green: #2ba84a;
-$black: #000000;
-$white: #ffffff;
-$grey: #7f7979;
-$red: #3d0c11;
-
-/* ---------------------------------- Fonts --------------------------------- */
-$main-font: "Antonio", sans-serif;
-/* -------------------------------- Font Size ------------------------------- */
-/* ------------------------------- Font Weight ------------------------------ */
-$xlight: 200;
-$light: 400;
-$med: 600;
-$larg: 700;
-/* ----------------------------------- End ---------------------------------- */
 html {
-  font-family: $main-font;
+  font-family: v.$main-font;
 }
 
 body {
@@ -52,28 +38,47 @@ header {
 .left_div {
   display: flex;
   flex-direction: column;
-  height: 75%;
+  overflow: hidden;
+  height: 79%;
   width: 25%;
-  background-color: $green;
+  background-color: v.$green;
 }
 
-.h1 {
-  height: auto;
-  font-size: 3rem;
+.h1_cont {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  h1 {
+    font-size: 9rem;
+  }
 }
 
-.p {
-  font-size: 2em;
-  font-family: $main-font;
+.p_cont {
+  flex-grow: 2;
+
+  p {
+    padding-left: 6px;
+    font-size: 2.8em;
+    font-weight: v.$med;
+  }
 }
 
-.browse {
+.browse_cont {
+  flex-grow: 0;
+  width: 75%;
   display: flex;
   flex-direction: row;
-  width: 75%;
-  align-items: center;
+  align-items: flex-end;
+  padding-left: 6px;
+
+  h4 {
+    flex-grow: 1;
+    font-size: 3rem;
+  }
+
   img {
-    margin-left: 1em;
+    flex-grow: 2;
   }
 }
 
